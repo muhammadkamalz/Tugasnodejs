@@ -38,7 +38,6 @@ if(Number.isInteger(angka)){
     }
         else{
         console.log("Ini bukan angka")
-        console.log(typeof angka)
     print();   
     }
 
