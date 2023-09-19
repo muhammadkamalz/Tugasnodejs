@@ -1,6 +1,10 @@
 let kode;
 function grading(nilai){
-    if (nilai == 0){
+    if (nilai == ""){
+        kode = 3;
+        console.log("Tidak ada nilai");
+    }
+    else if (nilai == 0){
         kode = 1;
         console.log("Nilai Anda adalah : F");
     }

@@ -3,10 +3,13 @@ const prompt = require('prompt-sync')()
 
 const print = () => {
 
-    let angka = parseFloat(prompt("masukkan nilai anda : "));
-    if(isNaN(angka)){
-        console.log("Gagal");
-        print();
+    let angka = prompt("masukkan nilai anda : ");
+    if(angka == ""){
+        grading(angka);
+        // print();
+    }
+    else if (Number.isInteger(angka)){
+        grading(angka);
     }
     // else if (angka < 0 || angka > 100){
     //     grading(angka);
@@ -18,7 +21,12 @@ const print = () => {
 
     
 }
+
 print();
+// grading(-50);
+// grading("");
+// grading(50);
+
 
 module.exports = print;
 
